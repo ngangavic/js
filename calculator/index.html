@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Calculator
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="javascript" src="../jquery-3.4.1.js"></script>
+    <script type="javascript" src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="math.min.js"></script>
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="outermost">
+            <div class="col-xs-12 col-sm-12 col-md-6 offset-md-3 col-lg-6 outer">
+
+                <div class="screen">
+                    <h4 id="display">0</h4>
+                </div>
+                <div class="btns">
+                    <div class="row">
+                        <button class="btn btn-primary col-md-3" id="clear">C</button>
+                        <button class="btn btn-primary col-md-3" id="brackets_open">(</button>
+                        <button class="btn btn-primary col-md-3" id="brackets_close" style="display: none;">)</button>
+                        <button class="btn btn-primary col-md-3" id="percentage">%</button>
+                        <button class="btn btn-primary col-md-3" id="divide">/</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn btn-primary col-md-3" id="seven">7</button>
+                        <button class="btn btn-primary col-md-3" id="eight">8</button>
+                        <button class="btn btn-primary col-md-3" id="nine">9</button>
+                        <button class="btn btn-primary col-md-3" id="multiply">X</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn btn-primary col-md-3" id="four">4</button>
+                        <button class="btn btn-primary col-md-3" id="five">5</button>
+                        <button class="btn btn-primary col-md-3" id="six">6</button>
+                        <button class="btn btn-primary col-md-3" id="minus">-</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn btn-primary col-md-3" id="one">1</button>
+                        <button class="btn btn-primary col-md-3" id="two">2</button>
+                        <button class="btn btn-primary col-md-3" id="three">3</button>
+                        <button class="btn btn-primary col-md-3" id="addition">+</button>
+                    </div>
+                    <div class="row">
+                        <button class="btn btn-primary col-md-3" id="zero">0</button>
+                        <button class="btn btn-primary col-md-3" id="decimal">.</button>
+                        <button class="btn btn-primary col-md-3" id="delete">Del</button>
+                        <button class="btn btn-primary col-md-3" id="answer">=</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+   
+<script src="calculator.js" ></script>
+</body>
+
+</html>
