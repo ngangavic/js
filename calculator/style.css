@@ -1,0 +1,31 @@
+body{
+    background-color: #ffffff;
+}
+.screen{
+    background-color: #cccccc;
+    padding: 20px;
+}
+.outermost{
+    padding: 10px;
+}
+.row{
+    margin: 2px;
+}
+.outer{
+    background-color: #DAAE71;
+    padding: 10px;
+    border-radius: 7px;
+}
+.btn{
+    background-color: #DAAE71;
+    border-style: solid;
+    border-color: black;
+
+}
+.btn:hover{
+    background-color: #dab771;
+    border-style: solid;
+    border-color: black;
+    transition: transform 10s;
+    transform: scale(1.1);
+}
