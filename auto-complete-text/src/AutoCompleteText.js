@@ -18,7 +18,7 @@ export default class AutoCompleteText extends React.Component {
     onTextChanged = (e) => {
         const value = e.target.value;
         let suggestions = [];
-        if (value.lenght > 0) {
+        if (value.length > 0) {
             const regex = new RegExp(`^${value}`, 'i');
             suggestions = this.items.sort().filter(v => regex.test(v));
         }
