@@ -11,14 +11,14 @@ class SendMessageForm extends React.Component {
     }
 
     handleChange(e) {
-        this.state({
+        this.setState({
             message: e.target.value
         })
     }
 
     handleSubmit(e) {
         e.preventDefault()
-
+        console.log(this.state.message)
     }
 
     render() {
