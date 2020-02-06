@@ -11,7 +11,10 @@ class RoomList extends React.Component {
                             room => {
                                 return (
                                     <li key={room.id} className="room">
-                                        <a href="#">#{room.name} </a>
+                                        <a onClick={() => this.props.subscribeToRoom(room.id)}
+                                            href="#">
+                                            # {room.name}
+                                        </a>
                                     </li>
                                 )
                             }
