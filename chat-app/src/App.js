@@ -13,6 +13,7 @@ class App extends React.Component {
   constructor() {
     super()
     this.state = {
+      roomId:null,
       messages: [],
       joinableRooms: [],
       joinedRooms: []
@@ -26,7 +27,7 @@ class App extends React.Component {
   componentDidMount() {
     const chatManager = new ChatKit.ChatManager({
       instanceLocator: instanceLocator,
-      userId: 'vic',
+      userId: 'mic',
       tokenProvider: new ChatKit.TokenProvider({
         url: tokenUrl
       })
@@ -64,12 +65,19 @@ class App extends React.Component {
         }
       }
     })
+      .then(room => {
+        this.setState({
+          roomId:room.id
+        })
+        this.getRooms()
+      })
+      .catch(err => console.log('error on subscribing to room:', err))
   }
 
   sendMessage(text) {
     this.currentUser.sendMessage({
       text: text,
-      roomId: 'c00dcc9a-51db-48f0-bad9-bfd17395f41b'
+      roomId: this.state.roomId
     })
   }
 
