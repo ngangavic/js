@@ -28,7 +28,7 @@ class App extends React.Component {
   componentDidMount() {
     const chatManager = new ChatKit.ChatManager({
       instanceLocator: instanceLocator,
-      userId: 'mic',
+      userId: 'vic',
       tokenProvider: new ChatKit.TokenProvider({
         url: tokenUrl
       })
@@ -92,7 +92,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="app">
         <RoomList
           roomId={this.state.roomId}
           subscribeToRoom={this.subscribeToRoom} rooms={[...this.state.joinableRooms, ...this.state.joinedRooms]} />
